@@ -5,7 +5,8 @@ EAPI=7
 
 inherit desktop
 
-FPCVER="3.0.4"
+FPCVER="3.2.2"
+LAZVER="2.0.12"
 PYTHON_HASH="586eec1a5ea609ef9df2bf586be06825d9fbd50f"
 
 DESCRIPTION="Lazarus IDE is a feature rich visual programming environment emulating Delphi"
@@ -13,7 +14,7 @@ HOMEPAGE="https://www.lazarus-ide.org/"
 SRC_URI="
 	python? ( https://github.com/Alexey-T/Python-for-Lazarus/archive/${PYTHON_HASH}.tar.gz ->\
 		${P}-python.tar.gz )
-	https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%202.0.10/${P}-2.tar.gz"
+	https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%20${LAZVER}/${P}.tar.gz"
 
 LICENSE="GPL-2 LGPL-2.1-with-linking-exception"
 SLOT="0" # Note: Slotting Lazarus needs slotting fpc, see DEPEND.
